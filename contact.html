@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SS Construction - Contact Us</title>
+  <link rel="icon" type="image/png" href="images/tab.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.jpeg" alt="SS Construction Logo" class="logo">
+    </div>
+    <div class="contact-info">
+      <p><strong>Make a call:</strong> +91 90920 69444, +91 80514 94049</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/" target="_blank" rel="noopener"><img src="images/facebook.png" alt="Facebook" class="social-icon"></a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener"><img src="images/instagram.png" alt="Instagram" class="social-icon"></a>
+        <a href="https://youtube.com/" target="_blank" rel="noopener"><img src="images/youtube.png" alt="YouTube" class="social-icon"></a>
+        <a href=" https://g.co/kgs/iS8vpi2" target="_blank" rel="noopener"><img src="images/google-maps.png" alt="Google" class="social-icon"></a>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" class="active">Contact Us</a>
+  </nav>
+
+  <section class="contact-banner">
+    <h2>Contact Us</h2>
+    <p>We're here to help with your construction needs</p>
+  </section>
+
+  <div class="contact-container">
+    <div class="contact-info-container">
+      <div class="contact-info-box">
+        <h3>Our Office</h3>
+        <p><strong>Address:</strong><br>
+        4/353 Senguttai, Karimangalam - Harur Rd,<br>
+        Chinna, Ichambadi, Tamil Nadu 635202, India</p>
+        <p><strong>Phone:</strong> +91 90920 69444, +91 80514 94049</p>
+        <p><strong>Email:</strong> info@ssconstruction.in</p>
+      </div>
+      <div class="contact-hours">
+        <h3>Business Hours</h3>
+        <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+        <p><strong>Saturday:</strong> 9:00 AM - 1:00 PM</p>
+        <p><strong>Sunday:</strong> Closed</p>
+      </div>
+    </div>
+    <div class="contact-form-container">
+      <h3>Send us a message</h3>
+      <form id="contactForm">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    // Simple form handler (no backend)
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your message! We will get back to you soon.');
+          contactForm.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+

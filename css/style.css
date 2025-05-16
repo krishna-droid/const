@@ -1,0 +1,159 @@
+/* Common styles for all pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #ffffff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 70px;
+    margin-right: 15px;
+  }
+  
+  .logo-text h1 {
+    color: #352c87;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .logo-text p {
+    color: #0093d0;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .contact-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    color: #352c87;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #0093d0;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #352c87;
+    padding: 15px 5%;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover, nav a.active {
+    color: #0093d0;
+  }
+  
+  /* Buttons */
+  .cta-button, .about-button, .submit-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #352c87;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover, .about-button:hover, .submit-btn:hover {
+    background-color: #0093d0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px 3%;
+    }
+    
+    .logo-container {
+      margin-bottom: 15px;
+    }
+    
+    .contact-info {
+      align-items: center;
+    }
+    
+    nav {
+      padding: 10px 3%;
+    }
+    
+    nav a {
+      margin: 0 10px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      height: 50px;
+    }
+    
+    .logo-text h1 {
+      font-size: 20px;
+    }
+    
+    nav a {
+      margin: 0 5px;
+      font-size: 13px;
+    }
+  }
+  
